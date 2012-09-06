@@ -1,4 +1,20 @@
 var vocabulary = [
-  ["coche", "Auto"],
-  ["ahora", "jetzt"]
+  ["el coche", "Car"],
+  ["ahora", "now"],
+  ["algo", "etwas"],
+  ["el computador", "computer"],
+  ["lenguaje de programacion", "programming language"],
+  ["programmar algo", "program something"],
+  ["la comida", "lunch"],
+  ["carne", "meat"],
+  ["la verdura", "vegetables"],
+  ["la abuela", "grandmother"],
+  ["el puchero", "stew"],
+  ["novia", "girlfriend"],
+  ["la arveja", "pea"],
+  ["la patata", "potatoes"],
+  ["la judía", "bean"],
+  ["la gallina", "chicken"],
+  ["el jardín", "garden"],
+
 ];
