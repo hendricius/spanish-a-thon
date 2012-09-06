@@ -2,5 +2,191 @@
 layout: default
 title: Yummi - my homepage
 ---
-%h2
-  hi, i like being fed with content
+%h2 Préterito Indefinido
+
+%blockquote
+  %p
+    The Indefinidio is used to talk about activities that happened in the past and have no releation
+    to the present.
+%h3 Regular forms
+.tabbable.tabs-left
+  %ul.nav.nav-tabs
+    %li.active
+      %a{"data-toggle" => "tab", :href => "#indefinido_regular"} Regular verbs
+    %li
+      %a{"data-toggle" => "tab", :href => "#indefinido_irregular"} Irregular verbs
+    %li
+      %a{"data-toggle" => "tab", :href => "#indefinido_example_uses"} Example uses
+  .tab-content
+    #indefinido_regular.tab-pane
+      .bs-docs-example
+        %table.table.table-hover
+          %thead
+            %tr
+              %th Pronombre personal
+              %th -AR
+              %th -ER
+              %th -IR
+          %tbody
+            %tr
+              %td yo
+              %td trabajé
+              %td nací
+              %td abrí
+            %tr
+              %td tu
+              %td tabajaste
+              %td niciste
+              %td abriste
+            %tr
+              %td el/ella
+              %td trabajó
+              %td nació
+              %td abrió
+            %tr
+              %td nosotros
+              %td trabajamos
+              %td nacimos
+              %td abrimos
+            %tr
+              %td vosotros
+              %td trabajasteis
+              %td nacisteis
+              %td abristeis
+            %tr
+              %td ellas/ellos
+              %td trabajaron
+              %td nacieron
+              %td abrieron
+    #indefinido_irregular.tab-pane
+      %p
+        .span5
+          %span.label.label-info.space-right
+            Important
+          %span For irregular verbs the base of the word changes. Verbs marked with * end on eron.
+          .bs-docs-example
+            %table.table.table-hover
+              %thead
+                %tr
+                  %th Verbo
+                  %th Conjugacion
+              %tbody
+                %tr
+                  %td decir
+                  %td dij-*
+                %tr
+                  %td producir
+                  %td traj-*
+                %tr
+                  %td traer
+                  %td traj-*
+                %tr
+                  %td estar
+                  %td estuv-
+                %tr
+                  %td poder
+                  %td pud-
+                %tr
+                  %td poner
+                  %td pud-
+                %tr
+                  %td saber
+                  %td sup-
+                %tr
+                  %td tener
+                  %td tuv-
+                %tr
+                  %td venir
+                  %td vin-
+                %tr
+                  %td hacer
+                  %td hic-/hiz-
+        .span3
+          %span.label.label-info.space-right
+            Important
+          %span Irregular verbs have a different ending.
+          .bs-docs-example
+            %table.table.table-hover
+              %thead
+                %tr
+                  %th Pronombre
+                  %th Conjugacion
+              %tbody
+                %tr
+                  %td yo
+                  %td -e
+                %tr
+                  %td tu
+                  %td -iste
+                %tr
+                  %td el
+                  %td -o
+                %tr
+                  %td nosotros
+                  %td -imos
+                %tr
+                  %td vosotros
+                  %td -isteis
+                %tr
+                  %td ellos
+                  %td -ieron/-eron*
+        .span8
+          %hr
+          %p
+            %span.label.label-info.space-right
+              Important
+            The verbs <em>ir and ser</em> have the same conjugation. The verb <em>dar</em> is conjugated like the verbs ending on -ir and -er.
+          .bs-docs-example
+            %table.table.table-hover
+              %thead
+                %tr
+                  %th ir/ser
+                  %th dar
+              %tbody
+                %tr
+                  %td fui
+                  %td di
+                %tr
+                  %td fuiste
+                  %td diste
+                %tr
+                  %td fue
+                  %td dio
+                %tr
+                  %td fuimos
+                  %td dimos
+                %tr
+                  %td fuisteis
+                  %td disteis
+                %tr
+                  %td fueron
+                  %td dieron
+    #indefinido_example_uses.tab-pane.active
+      %p The indefinido is commonly used like this:
+      .bs-docs-example
+        %table.table.table-hover
+          %thead
+            %tr
+              %th Time indicators
+          %tbody
+            %tr
+              %td
+                Ayer/Anteayer/anoche
+            %tr
+              %td
+                Hace dos dias
+            %tr
+              %td
+                el año pasado
+            %tr
+              %td
+                la semana pasada
+            %tr
+              %td
+                el lunes
+            %tr
+              %td
+                el 6 de julio de 1998
+            %tr
+              %td
+                del 96 al 99
