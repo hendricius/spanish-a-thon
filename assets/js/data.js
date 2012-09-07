@@ -7,6 +7,7 @@ var words_collection = [
   ["lenguaje de programacion", "programming language"],
   ["programmar algo", "program something"],
   ["la comida", "lunch"],
+  ["comer", "to have lunch"],
   ["carne", "meat"],
   ["la verdura", "vegetables"],
   ["la abuela", "grandmother"],
@@ -30,7 +31,13 @@ var words_collection = [
   ["anteayer", "the day before yesterday"],
   ["anoche", "last night"],
   ["hace dos dias", ""],
-  ["", ""],
+  ["el aumento", "the increase"],
+  ["el sueldo", "sallary"],
+  ["todavía", "yet/still"],
+  ["el informe", "documenation/report"],
+  ["cambiar algo", "change sth."],
+
+
 
 ];
 
@@ -51,7 +58,14 @@ var verbs_collection = [
   ["ser", "to be"],
   ["poner", ""],
   ["traer", "bring"],
-  ["trasladar"], ["move sth."]
+  ["trasladar"], ["move sth."],
+  ["romper"], ["smash sth."],
+  ["volver", "turn around"],
+  ["morir", "to die"],
+  ["describir", "to describe"],
+  ["decir", "to say something"],
+  ["escribir", "to write"],
+
 ]
 
 var phrases_collection = [
@@ -72,6 +86,7 @@ var phrases_collection = [
   ["", "I didn't know that."],
   ["", "Did you know that..?"],
   ["", "Two days ago i bought a coke."],
+  ["", "Did you change the software on my computer?"],
   ["", ""],
   ["", ""],
   ["", ""],
@@ -104,6 +119,26 @@ var phrases_collection = [
   ["", ""],
   ["", ""],
   ["", ""],
-  ["", ""],
-
 ]
+var tenses = {
+  preterito_perfecto: {
+    irregular: [
+      ["hacer", "hecho"],
+      ["ver", "visto"],
+      ["poner", "puesto"],
+      ["romper", "roto"],
+      ["volver", "vuelto"],
+      ["abrir", "abierto"],
+      ["morir", "muerto"],
+      ["decir", "dicho"],
+      ["escribir", "escrito"],
+      ["hacer", "hecho"],
+    ],
+    examples: [
+      ["Ya has hablado con tu jefe sobre el aumento de sueldo?", "No, todavia no"],
+      ["Todavía no ha terminado el informe sobre Hans", ""],
+      ["Has cambiado de trabajo alguna vez?", "Sí, muchas veces."],
+    ]
+  }
+}
+

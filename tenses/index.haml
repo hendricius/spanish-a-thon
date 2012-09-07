@@ -2,8 +2,78 @@
 layout: default
 title: Yummi - my homepage
 ---
-%h2 Préterito Indefinido
+%h2 Pretérito Perfecto
+%blockquote
+  %p
+    The preterito perfecto is used to talk about things that happened in the past and continue until now.
+%ul.nav.nav-tabs
+  %li.active
+    %a{"data-toggle" => "tab", :href => "#perfecto_regular"} Regular verbs
+  %li
+    %a{"data-toggle" => "tab", :href => "#perfecto_irregular"} Irregular verbs
+  %li
+    %a{"data-toggle" => "tab", :href => "#perfecto_example_uses"} Example uses
+.tab-content
+  #perfecto_regular.tab-pane.active
+    .span4
+      .bs-docs-example
+        %table.table.table-hover
+          %thead
+            %tr
+              %th Pronombre
+              %th haber
+              %th example
+        %tbody
+          %tr
+            %td yo
+            %td he
+            %td trabajado
+          %tr
+            %td tu
+            %td has
+            %td tenido
+          %tr
+            %td el
+            %td ha
+            %td producido
+          %tr
+            %td nosotros
+            %td hemos
+            %td trabajado
+          %tr
+            %td vosotors
+            %td habéis
+            %td trabajado
+          %tr
+            %td ellos
+            %td han
+            %td trabajado
 
+    .span4
+      %p.lead
+        Then append the verb you want to use with one of the below custom endings.
+      %ul
+        %li
+          %span -ar
+          %i.icon-arrow-right
+          %span -ado
+        %li
+          %span -er / -ir
+          %i.icon-arrow-right
+          %span -ido
+  #perfecto_irregular.tab-pane
+    %table.table.table-hover
+      %thead
+        %tr
+          %th #
+          %th Verb
+          %th Irregular
+      %tbody.preterito_perfecto
+  #perfecto_example_uses.tab-pane
+    %dl
+      %dt fu
+      %dd bar
+%h2 Préterito Indefinido
 %blockquote
   %p
     The Indefinidio is used to talk about activities that happened in the past and have no releation
@@ -18,7 +88,7 @@ title: Yummi - my homepage
     %li
       %a{"data-toggle" => "tab", :href => "#indefinido_example_uses"} Example uses
   .tab-content
-    #indefinido_regular.tab-pane
+    #indefinido_regular.tab-pane.active
       .bs-docs-example
         %table.table.table-hover
           %thead
@@ -161,7 +231,7 @@ title: Yummi - my homepage
                 %tr
                   %td fueron
                   %td dieron
-    #indefinido_example_uses.tab-pane.active
+    #indefinido_example_uses.tab-pane
       %p The indefinido is commonly used like this:
       .bs-docs-example
         %table.table.table-hover
@@ -190,3 +260,11 @@ title: Yummi - my homepage
             %tr
               %td
                 del 96 al 99
+%h2 Indirecto
+%blockquote
+  %p
+    The indirecto is used to talk about something what another person is doing.
+%h2 Imperativo
+%blockquote
+  %p
+    The imperativo is used to give someone commands
