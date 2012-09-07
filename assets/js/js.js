@@ -3,14 +3,17 @@ $(document).ready(function() {
 
   switch (path) {
     case "/words/":
-      logic.pair_value(words_collection, true, $('.parse-data'));
+      logic.pair_value(vocab.words, true, $('.parse-data'));
       break;
     case "/phrases/":
-      logic.pair_value(phrases_collection, true, $('.parse-data'));
+      logic.pair_value(vocab.phrases, true, $('.parse-data'));
       break;
     case "/tenses/":
       logic.pair_value(tenses.preterito_perfecto.irregular, true, $('.preterito_perfecto'));
       logic.examples(tenses.preterito_perfecto.examples, $('#perfecto_example_uses dl'));
+      break;
+    case "/linking-words/":
+      logic.duplicate($('.duplicate tbody'), vocab.linking);
       break;
     default:
       console.log("not defined");
@@ -38,12 +41,30 @@ var logic = {
         explanation: elem[1]
       })))
     })
+  },
+  duplicate: function(elems, data) {
+    _.each(elems, function(elem) {
+      $(elem).empty();
+    })
+    var mid = Math.round(data.length/2);
+    var lists = [_.first(data, mid), _.last(data, mid)];
+    if (_.include(lists[0], lists[1][0])){
+      lists[1].splice(0,1);
+    }
+    _.each(lists, function(list, index) {
+      _.each(list, function(elem) {
+        $(elems[index]).append($(templates.pair_value({
+          word: elem[0],
+          translation: elem[1]
+        })))
+      })
+    })
   }
 }
 var templates = {
   pair_value: _.template("\
     <tr>\
-    <% if (count) { %>\
+    <% if (!(typeof(count) == 'undefined') && (count)) { %>\
     <td><%= count %></td>\
     <% } %>\
     <td><%= word %></td>\
