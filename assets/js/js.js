@@ -20,8 +20,6 @@ $(document).ready(function() {
       var list_examples = [];
       var example_only = []
       var keys = _.each(pronouns, function(elem, value) {
-        console.log(elem);
-        console.log(value);
         if (_.include(_.keys(elem), "list")) {
           list_examples.push(value);
         } else {
