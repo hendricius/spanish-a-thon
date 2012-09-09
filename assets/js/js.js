@@ -13,8 +13,10 @@ $(document).ready(function() {
       logic.examples(tenses.preterito_perfecto.examples, $('#perfecto_example_uses dl'));
       break;
     case "/linking-words/":
-      logic.duplicate($('.opinions tbody'), vocab.opinions);
       logic.duplicate($('.linking tbody'), vocab.linking);
+      break;
+    case "/expressing-opinion/":
+      logic.duplicate($('.opinions tbody'), vocab.opinions);
       break;
     case "/pronomes/":
       var list_examples = [];
