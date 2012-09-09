@@ -49,6 +49,7 @@ var vocab = {
     ["estar casado con alguien", "to be marred with so."],
     ["el perro", "the dog"],
     ["pero", "but"],
+    ["actualmente", "currently"],
   ],
   verbs: [
     ["hablar", "speak"],
@@ -85,6 +86,7 @@ var vocab = {
     ["escuchar", "to hear"],
     ["el cachorro", "the puppy"],
     ["venir", "to come"],
+    ["llover", "to rain"],
 
   ],
   phrases: [
@@ -171,15 +173,26 @@ var vocab = {
   ],
   linking: [
     ["aunque", "despite"],
-    ["", ""],
-    ["", ""],
-    ["", ""],
-    ["", ""],
-    ["", ""],
-    ["", ""],
-    ["", ""],
-    ["", ""],
-    ["", ""],
+    ["según", "to start with"],
+    ["por esta razón", "for this reason"],
+    ["además", "furthermore/moreover"],
+    ["por un lado", "on the one hand"],
+    ["por otro lado", "on the other hand"],
+    ["por el contrario", "in the opposite"],
+    ["es decir", "in other words/I mean"],
+    ["o sea", "das heißt"],
+    ["sea como sea", "jedenfalls"],
+    ["tambien", "auch"],
+    ["aunque", "although"],
+    ["en definitiva", "in short"],
+    ["pero", "but"],
+    ["finalmente", "finally"],
+    ["de esta manera", "this way"],
+    ["en resumen", "in conclusion"],
+    ["por tanto", "therefore"],
+    ["asimismo", "also"],
+    ["sin embargo", "sin embargo"],
+    ["para empezar", "to start with"],
   ]
 }
 var tenses = {
@@ -336,6 +349,30 @@ var pronouns = {
       ["Quiero comprar la casa de usted", "I want to buy your house."],
     ]
   }
-
+}
+var biography = {
+  text: [
+    ["Holá, me llamo Hendrik Kleinwaechter.", ""],
+    ["Fue nacido en el veingt-i-cuatro Noviembre mille nueve cientos ochenta y nueve en Hamburgo.", ""] ,
+    ["Actualmente tengo veingt-i-dos años.", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+  ],
 }
 
