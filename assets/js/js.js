@@ -13,7 +13,20 @@ $(document).ready(function() {
       logic.examples(tenses.preterito_perfecto.examples, $('#perfecto_example_uses dl'));
       break;
     case "/linking-words/":
-      logic.duplicate($('.duplicate tbody'), vocab.linking);
+      logic.duplicate($('.opinions tbody'), vocab.opinions);
+      logic.duplicate($('.linking tbody'), vocab.linking);
+      break;
+    case "/pronomes/":
+      var data_twice = ["subject_pronouns", "prepositional_object_pronouns", "direct_object_pronouns", "indirect_object_pronouns", "possessive_pronouns"];
+      var data_single = ["interrogative_pronouns", "double_object_pronouns", "misc_other_pronouns"];
+      _.each(data_twice, function(elem) {
+        logic.pair_value(pronouns[elem].list, false, $($('.' + elem + ' tbody')[0]));
+        logic.pair_value(pronouns[elem].examples, false, $($('.' + elem + ' tbody')[1]));
+      })
+      _.each(data_single, function(elem) {
+        logic.pair_value(pronouns[elem].examples, false, $('.' + elem + ' tbody'));
+      })
+
       break;
     default:
       console.log("not defined");
