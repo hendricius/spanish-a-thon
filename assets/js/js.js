@@ -17,13 +17,22 @@ $(document).ready(function() {
       logic.duplicate($('.linking tbody'), vocab.linking);
       break;
     case "/pronomes/":
-      var data_twice = ["subject_pronouns", "prepositional_object_pronouns", "direct_object_pronouns", "indirect_object_pronouns", "possessive_pronouns"];
-      var data_single = ["interrogative_pronouns", "double_object_pronouns", "misc_other_pronouns"];
-      _.each(data_twice, function(elem) {
+      var list_examples = [];
+      var example_only = []
+      var keys = _.each(pronouns, function(elem, value) {
+        console.log(elem);
+        console.log(value);
+        if (_.include(_.keys(elem), "list")) {
+          list_examples.push(value);
+        } else {
+          example_only.push(value);
+        }
+      });
+      _.each(list_examples, function(elem) {
         logic.pair_value(pronouns[elem].list, false, $($('.' + elem + ' tbody')[0]));
         logic.pair_value(pronouns[elem].examples, false, $($('.' + elem + ' tbody')[1]));
       })
-      _.each(data_single, function(elem) {
+      _.each(example_only, function(elem) {
         logic.pair_value(pronouns[elem].examples, false, $('.' + elem + ' tbody'));
       })
 
