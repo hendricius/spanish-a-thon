@@ -37,6 +37,9 @@ $(document).ready(function() {
       })
 
       break;
+    case "/about/":
+      logic.about(biography);
+      break;
     default:
       console.log("not defined");
   }
@@ -81,6 +84,17 @@ var logic = {
         })))
       })
     })
+  },
+  about: function(data) {
+    var el = $('<div>');
+    _.each(data.text, function(elem) {
+      var template = templates.text_translated({
+        content: elem[0],
+        translation: elem[1]
+      })
+      el.append(template);
+    })
+    $('.translations').append(el);
   }
 }
 var templates = {
@@ -96,5 +110,16 @@ var templates = {
   examples: _.template("\
     <dt><%= example %></dt>\
     <dd><%= explanation %></dd>"
+  ),
+  text_translated: _.template("\
+    <div class='translated-items row'>\
+      <div class='span6'>\
+        <p><%= content %></p>\
+      </div>\
+      <div class='span6'>\
+        <p><%= translation %></p>\
+      </div>\
+    </div>\
+    "
   )
 }
