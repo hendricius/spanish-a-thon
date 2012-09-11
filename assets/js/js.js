@@ -43,6 +43,8 @@ $(document).ready(function() {
     case "/common-questions/":
       logic.pair_value(misc.preguntas, true, $('.parse-data'));
       break;
+    case "/time/":
+      logic.pair_value(vocab.time, false, $('.parse-data'));
     default:
       console.log("not defined");
   }
