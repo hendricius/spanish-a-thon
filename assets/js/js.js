@@ -48,8 +48,11 @@ $(document).ready(function() {
     default:
       console.log("not defined");
   }
-  $('.learn-mode').on('click', 'th a', function(elem){
-    logic.trainer(elem);
+  $('.learn-mode').on('click', 'thead th a', function(elem){
+    logic.trainer($(elem.currentTarget), false);
+  });
+  $('.learn-mode').on('click', 'tbody tr td', function(elem){
+    logic.trainer($(elem.currentTarget), true);
   });
 })
 var logic = {
@@ -104,8 +107,12 @@ var logic = {
     })
     $('.translations').append(el);
   },
-  trainer: function(elem) {
-    var pos = $(elem.currentTarget).attr('class');
+  trainer: function(elem, click_column) {
+    if (click_column) {
+      var pos = elem.index() + 1;
+    } else {
+      var pos = elem.attr('class');
+    }
     var table = $('.learn-mode');
     var classes = table.attr('class').split(" ");
     var show = _.include(classes, 'hidden' + pos);
