@@ -48,6 +48,9 @@ $(document).ready(function() {
     default:
       console.log("not defined");
   }
+  $('.learn-mode').on('click', 'th a', function(elem){
+    logic.trainer(elem);
+  });
 })
 var logic = {
   pair_value: function(data, count, el) {
@@ -100,6 +103,17 @@ var logic = {
       el.append(template);
     })
     $('.translations').append(el);
+  },
+  trainer: function(elem) {
+    var pos = parseInt($(elem.currentTarget).attr('class')) + 1;
+    var table = $('.learn-mode');
+    var classes = table.attr('class').split(" ");
+    var show = _.include(classes, 'hidden' + pos);
+    if (show) {
+      table.removeClass('hidden' + pos);
+    } else {
+      table.addClass('hidden' + pos);
+    }
   }
 }
 var templates = {
@@ -109,7 +123,7 @@ var templates = {
     <td><%= count %></td>\
     <% } %>\
     <td><%= word %></td>\
-    <td><%= translation %><td>\
+    <td><%= translation %></td>\
     </tr>"
   ),
   examples: _.template("\
