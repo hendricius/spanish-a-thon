@@ -38,7 +38,10 @@ $(document).ready(function() {
 
       break;
     case "/about/":
-      logic.about(biography);
+      logic.about(misc.biography);
+      break;
+    case "/common-questions/":
+      logic.pair_value(misc.preguntas, true, $('.parse-data'));
       break;
     default:
       console.log("not defined");
