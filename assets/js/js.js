@@ -105,7 +105,7 @@ var logic = {
     $('.translations').append(el);
   },
   trainer: function(elem) {
-    var pos = parseInt($(elem.currentTarget).attr('class')) + 1;
+    var pos = $(elem.currentTarget).attr('class');
     var table = $('.learn-mode');
     var classes = table.attr('class').split(" ");
     var show = _.include(classes, 'hidden' + pos);
