@@ -69,7 +69,7 @@ var vocab = {
     ["el norte", "north"],
     ["el oeste", "west"],
     ["espectacular", "spectacular"],
-    ["", ""],
+    ["diversíon", "spaß"],
     ["", ""],
     ["", ""],
     ["", ""],
@@ -126,6 +126,8 @@ var vocab = {
     ["cerrar", "to close"],
     ["acabar", "finish sth."],
     ["empezar", "to start"],
+    ["crear algo", "to create"],
+
 
 
   ],
@@ -433,7 +435,12 @@ var biography = {
     ["Puedo recomendar los pastels de natas - son muy dulce y una comida typica de Portugal.", ""],
     ["Una otra comida que me gusta es un puchero typica - se llama 'Gardineira'.", ""],
     ["Tiene muchas verduras de la région de Porto.", ""],
-    ["Nos encantramos regularmente en el comedor universitario.", ""],
+    ["A mi me interesse mucho la immigracion de los portugeses.", ""],
+    ["La comunidad portuguesa es lo meyor en allemaña.", ""],
+    ["Por ejemplo los portugueses dicen 'um Terminado' en Hamburgo, pero esa palabra no existe en la lingua Portuguesa.", ""],
+    ["Mas un ejemplo, los portugueses dicen 'estu anmeldungado' pero no existe en la lingua Portuguesa tambien.", ""],
+    ["", ""],
+
   ],
 }
 
