@@ -102,7 +102,7 @@ var vocab = {
     ["traer", "bring"],
     ["trasladar"], ["move sth."],
     ["romper"], ["smash sth."],
-    ["volver", "turn around"],
+    ["volver", "turn around/to return"],
     ["morir", "to die"],
     ["describir", "to describe"],
     ["decir", "to say something"],
@@ -127,6 +127,7 @@ var vocab = {
     ["acabar", "finish sth."],
     ["empezar", "to start"],
     ["crear algo", "to create"],
+    ["dormirse", "to go to sleep"],
 
 
 
@@ -252,10 +253,9 @@ var tenses = {
       ["morir", "muerto"],
       ["decir", "dicho"],
       ["escribir", "escrito"],
-      ["hacer", "hecho"],
     ],
     examples: [
-      ["Ya has hablado con tu jefe sobre el aumento de sueldo?", "No, todavia no"],
+      ["Tu has hablado con tu jefe sobre el aumento de sueldo?", "No, todavia no"],
       ["Todavía no ha terminado el informe sobre Hans", ""],
       ["Has cambiado de trabajo alguna vez?", "Sí, muchas veces."],
     ]
