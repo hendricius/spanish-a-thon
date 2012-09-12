@@ -140,6 +140,9 @@ var vocab = {
     ["ahorrar", "to save"],
     ["asistir", "to assist"],
     ["desaparece", "to disappear"],
+    ["situar", "to be positioned"],
+    ["cantar", "to sing"],
+
 
 
   ],
@@ -545,6 +548,14 @@ var misc = {
     ["", "What have you done in your life so far?"],
     ["", "What are you doing on your work?"],
     ["", "What is the company doing you are working with?"],
+  ],
+  latinermica: [
+     ["America del Sur tambien se llama Sudamerica o Suramerica.", ""] ,
+     ["Esta situada entre el oceano Atlantico y el oceano Pacifico.", ""],
+     ["Hay muchos paises en el Sudamerica.", ""],
+     ["Por ejemplo Argentina, Brasil o Peru.", ""],
+     ["En Sudamerica han habitado muchos aborigenes por ejemplos los Injas o los Nazca.", ""],
+     ["Los Nazca me interessen mucho porque han hicho raros signos en el desierto.", ""],
   ]
 }
 

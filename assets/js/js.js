@@ -38,7 +38,10 @@ $(document).ready(function() {
 
       break;
     case "/about/":
-      logic.about(misc.biography);
+      logic.about(misc.biography.text);
+      break;
+    case "/latinamerica/":
+      logic.about(misc.latinermica);
       break;
     case "/common-questions/":
       logic.pair_value(misc.preguntas, true, $('.parse-data'));
@@ -103,7 +106,7 @@ var logic = {
   },
   about: function(data) {
     var el = $('<div>');
-    _.each(data.text, function(elem) {
+    _.each(data, function(elem) {
       var template = templates.text_translated({
         content: elem[0],
         translation: elem[1]
