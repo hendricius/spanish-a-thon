@@ -81,6 +81,10 @@ var vocab = {
     ["las armas", "weapons"],
     ["sacer un examen", "pass an exam"],
     ["el colaborador", "the coworker"],
+    ["el ladrón", "the thief"],
+    ["la ventana", "the window"],
+    ["cumpleaños", "birthday"],
+
 
 
 
@@ -130,6 +134,8 @@ var vocab = {
     ["crear algo", "to create"],
     ["dormirse", "to go to sleep"],
     ["viajar", "to travel"],
+    ["cenar", "to dine"],
+    ["esperar algo", "to expect someone"],
   ],
   phrases: [
     ["Me levanto siempre a las ocho de la mañana", "I always wake up at 8 in the morning"],
@@ -418,6 +424,64 @@ var pronouns = {
       ["Quiero comprar la casa de ella", "I want to buy her house."],
       ["Quiero comprar la casa de usted", "I want to buy your house."],
     ]
+  }
+}
+var prepositions = {
+  locations: {
+    a: {
+      use: ["directions", "distance"],
+      examples: ["Vamos a Madrid.", "Avilla esteá 55 kilómetros de aqui."]
+    },
+    en: {
+      use: ["localization", "public transport"],
+      examples: ["Vigo está en Galicia.", "Vamos en coche."]
+    },
+    de: {
+      use: ["Origin", "lejos/cerca/delante de"],
+      examples: ["Venimos de la universidad.", "Caracas está lejos de Lima."]
+    },
+    desde: {
+      use: ["Place of departure"],
+      examples: ["Vengo a pie desde el centro."]
+    },
+    hasta: {
+      use: ["Target"],
+      examples: ["Podemos ir en metro hasta el centro."]
+    },
+    por: {
+      use: ["Movement in an area"],
+      examples: ["Me gusta pasear por la playa.", "El ladrón entró por la ventana."]
+    }
+  },
+  time: {
+    a: {
+      use: ["+ Time"],
+      examples: ["Me levanto a las locho."]
+    },
+    por: {
+      use: ["+ Time"],
+      examples: ["No trabajo por la mañana."]
+    },
+    de: {
+      use: ["+ dia/noche"],
+      examples: ["Prefiero estudiar de noche."]
+    },
+    en: {
+      use: ["+ Month/season/year"],
+      examples: ["Mi cumpleaños es en abril."]
+    },
+    "antes/después": {
+      use: ["+ de"],
+      examples: ["Hago deporte antes de cenar."]
+    },
+    "de + a": {
+      use: ["Beginning de, end a"],
+      examples: ["Tabajamos de 9 a 6.", "Nos vamos del 2 al 7 de mayo."]
+    },
+    "deste las/hasta las": {
+      use: ["+ Time"],
+      examples: ["Te esperé desde las 3 hasta las 5."]
+    }
   }
 }
 var misc = {

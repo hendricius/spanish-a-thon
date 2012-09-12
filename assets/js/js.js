@@ -45,6 +45,11 @@ $(document).ready(function() {
       break;
     case "/time/":
       logic.pair_value(vocab.time, false, $('.parse-data'));
+      break;
+    case "/prepositions/":
+      logic.prepositions(prepositions.locations, $('.parse-data-locations'));
+      logic.prepositions(prepositions.time, $('.parse-data-time'));
+      break;
     default:
       console.log("not defined");
   }
@@ -121,6 +126,29 @@ var logic = {
     } else {
       table.addClass('hidden' + pos);
     }
+  },
+  prepositions: function(data, dom_el) {
+    var el = $('<tbody>');
+    _.each(data, function (value, key) {
+      var uses_el = $('<ul>');
+      _.each(value.use, function(elem){
+        uses_el.append($(templates.list_item({
+        content: elem,
+      })))
+      })
+      var examples_el = $('<ul>');
+      _.each(value.examples, function(elem){
+        examples_el.append($(templates.list_item({
+        content: elem,
+      })))
+      })
+      el.append($(templates.prepositions({
+        prepositions: key,
+        uses: uses_el.html(),
+        examples: examples_el.html(),
+      })))
+    })
+    dom_el.replaceWith(el);
   }
 }
 var templates = {
@@ -147,5 +175,24 @@ var templates = {
       </div>\
     </div>\
     "
-  )
+  ),
+  prepositions: _.template("\
+    <tr>\
+      <td>\
+        <strong><%= prepositions %></strong>\
+        <ul>\
+          <%= uses %>\
+        </ul>\
+      </td>\
+      <td>\
+        <ul>\
+          <%= examples %>\
+        </ul>\
+      </td>\
+    </tr>\
+    "
+  ),
+  list_item: _.template("\
+    <li><%= content %></li>\
+  ")
 }
