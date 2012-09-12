@@ -57,7 +57,6 @@ $(document).ready(function() {
     logic.trainer($(elem.currentTarget), false);
   });
   $('.table').on('click', 'tbody tr td', function(elem){
-    console.log("click");
     logic.trainer($(elem.currentTarget), true);
   });
 })
