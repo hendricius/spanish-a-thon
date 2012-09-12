@@ -556,6 +556,7 @@ var misc = {
      ["Por ejemplo Argentina, Brasil o Peru.", ""],
      ["En Sudamerica han habitado muchos aborigenes por ejemplos los Injas o los Nazca.", ""],
      ["Los Nazca me interessen mucho porque han hicho raros signos en el desierto.", ""],
+     ["Buenos Aires es la segunda ciudad mas rica despues the Sao Paolo. Es la ciudad mas vistada the sud america.", ""],
   ]
 }
 
