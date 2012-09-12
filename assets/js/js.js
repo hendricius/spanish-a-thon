@@ -53,10 +53,11 @@ $(document).ready(function() {
     default:
       console.log("not defined");
   }
-  $('.learn-mode').on('click', 'thead th a', function(elem){
+  $('.table').on('click', 'thead th a', function(elem){
     logic.trainer($(elem.currentTarget), false);
   });
-  $('.learn-mode').on('click', 'tbody tr td', function(elem){
+  $('.table').on('click', 'tbody tr td', function(elem){
+    console.log("click");
     logic.trainer($(elem.currentTarget), true);
   });
 })
@@ -118,7 +119,7 @@ var logic = {
     } else {
       var pos = elem.attr('class');
     }
-    var table = $('.learn-mode');
+    var table = elem.parent().parent().parent();
     var classes = table.attr('class').split(" ");
     var show = _.include(classes, 'hidden' + pos);
     if (show) {

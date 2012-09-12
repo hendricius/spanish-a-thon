@@ -137,6 +137,9 @@ var vocab = {
     ["cenar", "to dine"],
     ["esperar algo", "to expect someone"],
     ["deber", "should"],
+    ["ahorrar", "to save"],
+    ["asistir", "to assist"],
+
   ],
   phrases: [
     ["Me levanto siempre a las ocho de la mañana", "I always wake up at 8 in the morning"],
