@@ -139,6 +139,8 @@ var vocab = {
     ["deber", "should"],
     ["ahorrar", "to save"],
     ["asistir", "to assist"],
+    ["desaparece", "to disappear"],
+
 
   ],
   phrases: [
